@@ -48,6 +48,10 @@
 
 </p>
 
+# Known Limitations
+
+- This project uses Supabase's free tier, which automatically pauses the database after a period of inactivity. If the live demo appears unresponsive, the database may need a few seconds to resume, or manual reactivation may be required via the Supabase dashboard.
+
 ---
 
 # Table of Contents
