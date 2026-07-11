@@ -1,34 +1,29 @@
-# Solar CME Monitor
+# Task Manager
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/80e1b916-1c2a-4afc-b724-3f6374e32eec" alt="Solar CME Monitor Banner">
+  <img src="https://github.com/user-attachments/assets/6937136f-5849-4e04-9458-9a83e330757c" alt="Task Manager Banner">
 </p>
 
 <p align="center">
-  Search, visualize and persist Coronal Mass Ejection (CME) events from NASA's DONKI API.
+  A modern task management application built with Next.js, focused on productivity, organization and user experience.
 </p>
 
 <p align="center">
 
-![CI](https://github.com/nasa-cme/cme-dashboard/actions/workflows/ci.yml/badge.svg)
-![Status](https://img.shields.io/badge/status-under%20development-orange)
+![Status](https://img.shields.io/badge/status-completed-success)
 ![License](https://img.shields.io/badge/license-none-lightgrey)
 
 </p>
 
 <p align="center">
 
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=FFD62E)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Deno](https://img.shields.io/badge/Deno-000000?style=for-the-badge&logo=deno&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
 </p>
 
@@ -38,19 +33,16 @@
 
 <p align="center">
 
-<a href="https://solar-cme-monitor.vercel.app">
+<a href="https://gerenciador-de-tarefas-one-pearl.vercel.app/">
 <img src="https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge">
 </a>
 
-<a href="https://github.com/nasa-cme/cme-dashboard">
+<a href="https://github.com/murilotecoteco/Gerenciador-de-Tarefas">
 <img src="https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge">
 </a>
 
 </p>
 
-# Known Limitations
-
-- This project uses Supabase's free tier, which automatically pauses the database after a period of inactivity. If the live demo appears unresponsive, the database may need a few seconds to resume, or manual reactivation may be required via the Supabase dashboard.
 
 ---
 
@@ -64,18 +56,21 @@
 - Architecture
 - Project Structure
 - Getting Started
-- Environment Variables
 - Deployment
 - Roadmap
 - License
+
 
 ---
 
 # About
 
-Solar CME Monitor is a web application built with React that allows users to search, visualize and persist Coronal Mass Ejection (CME) events from NASA's DONKI API.
+Task Manager is a modern web application developed with Next.js that allows users to organize daily activities through a simple and intuitive task management system.
 
-The project focuses on modern frontend architecture, API integration, cloud databases and secure server-side communication using Supabase Edge Functions.
+The application provides task creation, editing, completion tracking, filtering and statistics, with a responsive interface optimized for desktop and mobile devices.
+
+The project focuses on frontend architecture, state management, user experience and modern web development practices.
+
 
 ---
 
@@ -83,13 +78,15 @@ The project focuses on modern frontend architecture, API integration, cloud data
 
 This project was built to practice and demonstrate:
 
-- React application architecture
-- REST API integration
-- Secure API proxying
-- Cloud database design
+- Next.js application development
+- React component architecture
+- TypeScript usage
 - Responsive interface development
-- Deployment workflows
-- GitHub Actions CI
+- Client-side data persistence
+- UI/UX improvements
+- Modern frontend workflows
+- Deployment with Vercel
+
 
 ---
 
@@ -97,26 +94,24 @@ This project was built to practice and demonstrate:
 
 ## Dashboard
 
-![Dashboard](.github/screenshots/dashboard.png)
+![Dashboard](https://github.com/user-attachments/assets/6937136f-5849-4e04-9458-9a83e330757c)
 
-## History
-
-![History](.github/screenshots/history.png)
 
 ---
 
 # Features
 
-- ✅ Search CME events by date range
-- ✅ NASA DONKI API integration
-- ✅ Secure API proxy using Supabase Edge Functions
-- ✅ Event persistence in PostgreSQL
-- ✅ Search history
-- ✅ Responsive interface
-- ✅ Error handling
-- ✅ Charts and statistics
-- ⏳ CSV export
-- ⏳ Advanced filters
+- ✅ Create new tasks
+- ✅ Edit existing tasks
+- ✅ Delete tasks
+- ✅ Mark tasks as completed
+- ✅ Filter tasks by status
+- ✅ Task statistics dashboard
+- ✅ Dark/light theme toggle
+- ✅ Toast notifications
+- ✅ Responsive layout for desktop and mobile
+- ✅ LocalStorage data persistence
+
 
 ---
 
@@ -124,64 +119,62 @@ This project was built to practice and demonstrate:
 
 | Layer | Technology |
 |------|------------|
-| Frontend | React 18 |
-| Build Tool | Vite |
-| Language | JavaScript (ES6+) |
+| Framework | Next.js |
+| Frontend Library | React |
+| Language | TypeScript |
 | Styling | CSS3 |
-| Database | PostgreSQL (Supabase) |
-| Backend | Supabase Edge Functions |
-| Runtime | Deno |
-| API | NASA DONKI API |
+| Storage | Browser LocalStorage |
 | Deployment | Vercel |
-| CI/CD | GitHub Actions |
 | Version Control | Git & GitHub |
+
 
 ---
 
 # Architecture
 
 ```
-Client Browser
+User Browser
       │
       ▼
-React Application
+Next.js Application
       │
  ┌────┴────┐
  │         │
  ▼         ▼
-Edge Function     Supabase Database
-      │               │
-      ▼               ▼
-NASA DONKI API   CME Events / History
+React Components     LocalStorage
+      │                   │
+      ▼                   ▼
+Task Management     Data Persistence
 ```
 
-The React application communicates with a Supabase Edge Function, which securely forwards requests to NASA's DONKI API while protecting the API key from client exposure. Retrieved data can then be stored and queried from the Supabase PostgreSQL database.
+The application uses a component-based architecture with React and Next.js.
+
+Task data is stored locally in the browser using LocalStorage, allowing users to maintain their tasks without requiring an external database.
+
 
 ---
 
 # Project Structure
 
 ```
-solar-cme-monitor/
+task-manager/
 │
 ├── public/
+│
 ├── src/
+│   ├── app/
 │   ├── components/
 │   ├── hooks/
-│   ├── pages/
-│   ├── services/
+│   ├── styles/
 │   ├── utils/
-│   ├── App.jsx
-│   └── main.jsx
+│   └── types/
 │
-├── supabase/
-│   ├── functions/
-│   └── migrations/
-│
-├── .env.example
 ├── package.json
+├── tsconfig.json
+├── next.config.js
 └── README.md
 ```
+
 
 ---
 
@@ -190,40 +183,39 @@ solar-cme-monitor/
 ## Prerequisites
 
 - Node.js 18+
-- Supabase account
-- NASA API Key
+- npm
+
 
 ## Installation
 
 ```bash
-git clone https://github.com/nasa-cme/cme-dashboard.git
-cd cme-dashboard
+git clone https://github.com/murilotecoteco/Gerenciador-de-Tarefas.git
+
+cd Gerenciador-de-Tarefas
+
 npm install
+
 npm run dev
 ```
 
 The development server will be available at:
 
 ```
-http://localhost:5173
+http://localhost:3000
 ```
+
 
 ---
 
-# Environment Variables
+# Production Build
 
-Create a `.env.local` file.
-
-```env
-VITE_SUPABASE_URL=
-VITE_SUPABASE_ANON_KEY=
-```
-
-Configure the NASA key in Supabase:
+To create a production build:
 
 ```bash
-supabase secrets set NASA_API_KEY=your_key
+npm run build
+npm start
 ```
+
 
 ---
 
@@ -231,31 +223,36 @@ supabase secrets set NASA_API_KEY=your_key
 
 The application is deployed on Vercel.
 
-Every push to the `main` branch automatically triggers a production deployment.
+Every push to the main branch automatically triggers a new deployment.
 
 Production URL:
 
 ```
-https://solar-cme-monitor.vercel.app
+https://gerenciador-de-tarefas-one-pearl.vercel.app/
 ```
+
 
 ---
 
 # Roadmap
 
-- [x] NASA API integration
-- [x] Supabase database
-- [x] Responsive UI
+- [x] Task creation system
+- [x] Task editing and deletion
+- [x] Status filtering
 - [x] Statistics dashboard
-- [x] Charts
-- [ ] CSV export
-- [ ] Advanced filtering
-- [ ] Performance optimizations
+- [x] Responsive interface
+- [x] Dark/light theme
+- [x] LocalStorage persistence
+- [ ] Authentication system
+- [ ] Cloud database integration
+- [ ] User accounts
+- [ ] Task sharing
+
 
 ---
 
 # License
 
-This project was developed for educational purposes.
+This project was developed for educational and portfolio purposes.
 
 No license has been applied.
